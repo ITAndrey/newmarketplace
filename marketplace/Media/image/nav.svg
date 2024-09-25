@@ -1,0 +1,7 @@
+<svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="span.nav-element__burger-line">
+<rect x="0.47937" y="9.71899" width="26" height="3" rx="1.5" fill="white"/>
+<rect id="::before" x="0.47937" y="0.718994" width="26" height="3" rx="1.5" fill="white"/>
+<rect id="::after" x="0.47937" y="18.719" width="26" height="3" rx="1.5" fill="white"/>
+</g>
+</svg>

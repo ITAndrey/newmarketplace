@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: newmarketplace
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 89562876
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5434:5432"
+
+  web:
+    build: .
+    command: python marketplace/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/marketplace
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_DB=newmarketplace
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=89562876
+      - DJANGO_SETTINGS_MODULE=marketplace.settings  # Исправлено
+
+volumes:
+  postgres_data:
+

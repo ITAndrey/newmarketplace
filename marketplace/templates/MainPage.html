@@ -1,0 +1,273 @@
+Andrey, [27.08.2024 18:06]
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link href ='{% static "index.css" %}' rel='stylesheet'>
+{% endblock  %}
+
+{% block content %}
+    </header>
+    <div id="slider-container">
+        <div id="slider">
+            <div class="slide"><img src="Media/image/slide.png" alt="Image 1"></div>
+            <div class="slide"><img src="Media/image/slide2.png" alt="Image 2"></div>
+            <div class="slide"><img src="Media/image/slide.png" alt="Image 3"></div>
+            <!-- Добавьте дополнительные слайды по мере необходимости -->
+        </div>
+        <div class="slider-arrow prev" onclick="prevSlide()">&#9665;</div>
+        <div class="slider-arrow next" onclick="nextSlide()">&#9655;</div>
+    </div>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById("navbar");
+            navbar.style.display = (navbar.style.display === "block") ? "none" : "block";
+        }
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slider = document.getElementById('slider');
+            const slides = document.getElementsByClassName('slide');
+
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            const translationValue = -currentSlide * 100 + '%';
+            slider.style.transform = 'translateX(' + translationValue + ')';
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+        setInterval(function () {
+            nextSlide();
+        }, 10000);
+    </script>
+
+
+    <div class="body">
+
+        <div class="content">
+            <div class="container">
+                <div class="cont">
+                    <p class="new">new</p>
+                    <p class="skidka">-25%</p>
+                    <p><img id="photo" src="{{ MEDIA_URL }}image/photo.png" alt="/"></p>
+                </div>
+                <div class="prise">
+                    <p id="orig">2222Р</p>
+                    <p id="back">2700Р</p>
+                </div>
+                <div class="opisanie">
+                    <p id="name">1
+                    <p id="opisanie">Игрушки интерактивные обучающая игра / развивающая / игра для детей</p>
+                    </p>
+                </div>
+                <div class="stars">
+                    <img src="{{ MEDIA_URL }}image/stars.svg" alt="/">
+                    <p id="opisanie">1 336</p>
+                </div>
+                <div class="dostavka">
+                    <p id="opisanie">Доставка</p>
+                    <p id="name">послезавтра</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="cont">
+                    <p class="new">new</p>
+                    <p class="skidka">-25%</p>
+                    <p><img id="photo" src="{{ MEDIA_URL }}image/photo.png" alt="/"></p>
+                </div>
+                <div class="prise">
+                    <p id="orig">2222Р</p>
+                    <p id="back">2700Р</p>
+                </div>
+                <div class="opisanie">
+                    <p id="name">2
+                    <p id="opisanie">Игрушки интерактивные обучающая игра / развивающая / игра для детей</p>
+                    </p>
+                </div>
+                <div class="stars">
+                    <img src="{{ MEDIA_URL }}image/stars.svg" alt="/">
+                    <p id="opisanie">1 336</p>
+                </div>
+                <div class="dostavka">
+                    <p id="opisanie">Доставка</p>
+                    <p id="name">послезавтра</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="cont">
+                    <p class="new">new</p>
+
+Andrey, [27.08.2024 18:06]
+<p class="skidka">-25%</p>
+                    <p><img id="photo" src="{{ MEDIA_URL }}image/photo.png" alt="/"></p>
+                </div>
+                <div class="prise">
+                    <p id="orig">2222Р</p>
+                    <p id="back">2700Р</p>
+                </div>
+                <div class="opisanie">
+                    <p id="name">3
+                    <p id="opisanie">Игрушки интерактивные обучающая игра / развивающая / игра для детей</p>
+                    </p>
+                </div>
+                <div class="stars">
+                    <img src="{{ MEDIA_URL }}image/stars.svg" alt="/">
+                    <p id="opisanie">1 336</p>
+                </div>
+                <div class="dostavka">
+                    <p id="opisanie">Доставка</p>
+                    <p id="name">послезавтра</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="cont">
+                    <p class="new">new</p>
+                    <p class="skidka">-25%</p>
+                    <p><img id="photo" src="{{ MEDIA_URL }}image/photo.png" alt="/"></p>
+                </div>
+                <div class="prise">
+                    <p id="orig">2222Р</p>
+                    <p id="back">2700Р</p>
+                </div>
+                <div class="opisanie">
+                    <p id="name">4
+                    <p id="opisanie">Игрушки интерактивные обучающая игра / развивающая / игра для детей</p>
+                    </p>
+                </div>
+                <div class="stars">
+                    <img src="{{ MEDIA_URL }}image/stars.svg" alt="/">
+                    <p id="opisanie">1 336</p>
+                </div>
+                <div class="dostavka">
+                    <p id="opisanie">Доставка</p>
+                    <p id="name">послезавтра</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="cont">
+                    <p class="new">new</p>
+                    <p class="skidka">-25%</p>
+                    <p><img id="photo" src="{{ MEDIA_URL }}image/photo.png" alt="/"></p>
+                </div>
+                <div class="prise">
+                    <p id="orig">2222Р</p>
+                    <p id="back">2700Р</p>
+                </div>
+                <div class="opisanie">
+                    <p id="name">5
+                    <p id="opisanie">Игрушки интерактивные обучающая игра / развивающая / игра для детей</p>
+                    </p>
+                </div>
+                <div class="stars">
+                    <img src="{{ MEDIA_URL }}image/stars.svg" alt="/">
+                    <p id="opisanie">1 336</p>
+                </div>
+                <div class="dostavka">
+                    <p id="opisanie">Доставка</p>
+                    <p id="name">послезавтра</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="cont">
+                    <p class="new">new</p>
+                    <p class="skidka">-25%</p>
+                    <p><img id="photo" src="{{ MEDIA_URL }}image/photo.png" alt="/"></p>
+                </div>
+                <div class="prise">
+                    <p id="orig">2222Р</p>
+                    <p id="back">2700Р</p>
+                </div>
+                <div class="opisanie">
+                    <p id="name">6
+                    <p id="opisanie">Игрушки интерактивные обучающая игра / развивающая / игра для детей</p>
+                    </p>
+                </div>
+                <div class="stars">
+                    <img src="{{ MEDIA_URL }}image/stars.svg" alt="/">
+                    <p id="opisanie">1 336</p>
+                </div>
+                <div class="dostavka">
+                    <p id="opisanie">Доставка</p>
+                    <p id="name">послезавтра</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+Andrey, [27.08.2024 18:06]
+<div class="container">
+                <div class="cont">
+                    <p class="new">new</p>
+                    <p class="skidka">-25%</p>
+                    <p><img id="photo" src="{{ MEDIA_URL }}image/photo.png" alt="/"></p>
+                </div>
+                <div class="prise">
+                    <p id="orig">2222Р</p>
+                    <p id="back">2700Р</p>
+                </div>
+                <div class="opisanie">
+                    <p id="name">7
+                    <p id="opisanie">Игрушки интерактивные обучающая игра / развивающая / игра для детей</p>
+                    </p>
+                </div>
+                <div class="stars">
+                    <img src="{{ MEDIA_URL }}image/stars.svg" alt="/">
+                    <p id="opisanie">1 336</p>
+                </div>
+                <div class="dostavka">
+                    <p id="opisanie">Доставка</p>
+                    <p id="name">послезавтра</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="cont">
+                    <p class="new">new</p>
+                    <p class="skidka">-25%</p>
+                    <p><img id="photo" src="{{ MEDIA_URL }}image/photo.png" alt="/"></p>
+                </div>
+                <div class="prise">
+                    <p id="orig">2222Р</p>
+                    <p id="back">2700Р</p>
+                </div>
+                <div class="opisanie">
+                    <p id="name">8
+                    <p id="opisanie">Игрушки интерактивные обучающая игра / развивающая / игра для детей</p>
+                    </p>
+                </div>
+                <div class="stars">
+                    <img src="{{ MEDIA_URL }}image/stars.svg" alt="/">
+                    <p id="opisanie">1 336</p>
+                </div>
+                <div class="dostavka">
+                    <p id="opisanie">Доставка</p>
+                    <p id="name">послезавтра</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock  %}

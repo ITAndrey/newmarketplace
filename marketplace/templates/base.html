@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'index.css'%}" rel="stylesheet">
+    <title>WB</title>
+
+    {% block css %}{% endblock  %}
+
+</head>
+
+<body>
+    <!-- Шапка -->
+    <div class="test">
+        <header>
+            <div id="header_container">
+                <div class="gorod">
+                    {% comment %} <p id="gorod"><img src="./image/geo.svg" alt="/" />Оренбург</p> {% endcomment %}
+                    <p id="gorod"><img src="{{ MEDIA_URL }}/image/geo.svg" alt="/" />Оренбург</p>
+                </div>
+                <div class="sell">
+                    <p>Продавайте на экспресс</p>
+                </div>
+                <div class="work">
+                    <p>Работа в экспресс</p>
+                </div>
+            </div>
+            <div class="header_container_down">
+                <div class="logo">
+                    <p>СУПЕР ЭКСПРЕСС</p>
+                </div>
+                <div class="dropdown">
+                    <div class="navbar-button" onclick="toggleNavbar()">
+                        <!-- Ваша SVG-иконка для навбара -->
+                        <img src="{% static 'vendor/image/nav.svg'%}" alt="Navbar Icon">
+                    </div>
+
+                    <!-- Навбар -->
+                    <div class="navbar" id="navbar">
+                        <ul>
+                            <li><a id="navbars" href="#">Страница 1</a></li>
+                            <li><a id="navbars" href="#">Страница 2</a></li>
+                            <li><a id="navbars" href="#">Страница 3</a></li>
+                            <li><a id="navbars" href="#">Страница 3</a></li>
+                            <li><a id="navbars" href="#">Страница 3</a></li>
+
+                            <!-- Добавьте дополнительные пункты, если нужно -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="form">
+
+                    <form>
+                        <p><input type="search" placeholder="Найти на экспресс" id="search"></p>
+                    </form>
+                </div>
+                <div class="clicks">
+                    <div class="trash">
+                        <p id="trash.svg"><img id="trash.svg" src="{% static 'vendor/image/trash.svg'%}" alt="/"></p>
+                        <p id="trash">Корзина</p>
+                    </div>
+                    <div class="trash">
+                        <p id="trash.svg"><img id="trash.svg" src="{% static 'vendor/image/lk.png'%}" alt="/"></p>
+                        <p id="trash">Профиль</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </header>
+
+{% block content %} {% endblock %}
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer">
+            <div class="pokupatel">
+                <p id="buyer">Покупателям</p>
+                <p id="click">Как сделать заказ</p>
+                <p id="click">Способы оплаты</p>
+                <p id="click">Доставка</p>
+                <p id="click">Возврат товара</p>
+                <p id="click">Возврат денежных средств</p>
+                <p id="click">Правила продажи</p>
+            </div>
+            <div class="pokupatel">
+                <p id="buyer">Компания</p>
+                <p id="click">О нас</p>
+                <p id="click">Реквизиты</p>
+                <p id="click">Контакты</p>
+                <p id="click">Горячая линия</p>
+            </div>
+        </div>
+        <div class="safe">
+            <p id="safe">2004-2023 © Экспресс — модный интернет-магазин одежды, обуви и аксессуаров. Все права защищены.
+                Доставка по всей России.<br /> На Торговой площадке express.ru применяются рекомендательные технологии .
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

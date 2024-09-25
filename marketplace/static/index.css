@@ -1,0 +1,795 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  */
+
+/*  */
+
+header {
+    background-image: url(./image/3fe435fcb2e8c8eaa7fcf34bd4f68159.jpg);
+    position: fixed;
+    /* Делаем хедер фиксированным */
+    top: 0;
+    /* Размещаем хедер вверху страницы */
+    width: 100%;
+    /* Занимает всю ширину экрана */
+    z-index: 1000;
+    /* Устанавливаем высокий z-index, чтобы хедер был выше других элементов */
+}
+
+#header_container {
+    display: flex;
+    padding-top: 0.5em;
+    gap: 1em;
+    width: 70%;
+    margin: auto;
+}
+
+/* Добавил стили для header_container_down, чтобы учесть высоту фиксированного хедера */
+.header_container_down {
+    margin-top: 70px;
+    /* Высота фиксированного хедера */
+}
+
+/* Добавил стили для logo и других элементов, чтобы учесть высоту фиксированного хедера */
+.logo,
+.dropdown,
+.form,
+.clicks {
+    padding-top: 10px;
+    /* Выравниваем содержимое по вертикали */
+}
+
+/* Добавил стили для формы поиска, чтобы учесть высоту фиксированного хедера */
+form {
+    margin: 0;
+}
+
+/* Добавил стили для clicks, чтобы учесть высоту фиксированного хедера */
+.clicks {
+    margin-top: 10px;
+    /* Выравниваем содержимое по вертикали */
+}
+
+.test {
+    padding-bottom: 10lh;
+}
+
+#header_container {
+    display: flex;
+    padding-top: 0.5lh;
+    gap: 1lh;
+    width: 70%;
+    margin: auto;
+
+}
+
+#navbars {
+    padding-bottom: 5%;
+}
+
+.navbar-button {
+    cursor: pointer;
+    padding: 10px;
+    color: black;
+}
+
+.navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 5%;
+    color: black;
+    width: 10%;
+    background-color: purple;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+}
+
+.navbar li {
+    margin: 10px 10px;
+}
+
+.navbar a {
+    padding-top: 200px;
+    gap: 20%;
+    text-decoration: none;
+    color: black;
+}
+
+#gorod {
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    align-content: center;
+    gap: 0.3lh;
+    cursor: pointer;
+
+}
+
+.sell {
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.work {
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+
+}
+
+.header_container_down {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 1lh;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    padding: 0.5lh;
+    cursor: pointer;
+}
+
+
+input {
+    border-radius: 12px;
+    background: #FFF;
+    width: 60lh;
+    height: 3lh;
+}
+
+#search {
+    padding: 10px;
+}
+
+.trash {
+    display: grid;
+    padding: 1lh;
+    justify-items: center;
+    cursor: pointer;
+}
+
+#trash {
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    cursor: pointer;
+
+}
+
+#slider-container {
+    display: flex;
+    width: 71%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.lk {
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+}
+
+.lk.svg {
+    width: 200%;
+    cursor: pointer;
+}
+
+.clicks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#trash.svg {
+    cursor: pointer;
+}
+
+
+.content {
+
+    display: flex;
+    padding-top: 1%;
+    justify-content: flex-start;
+    padding-bottom: 20%;
+}
+
+.container {
+    border-radius: 12px;
+    background: #FFF;
+    padding: 20px;
+    width: 215px;
+    height: 429px;
+    cursor: pointer;
+
+}
+
+#photo {
+    width: 100%;
+}
+
+.cont {
+    position: relative;
+}
+
+.new {
+    position: absolute;
+    color: #FFF;
+    top: 0.2lh;
+    left: 0.2lh;
+    font-family: SF Pro Text;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.12px;
+    text-transform: uppercase;
+    border-radius: 16px;
+    padding: 0.2lh;
+    background: #0CB477;
+}
+
+.skidka {
+    position: absolute;
+    bottom: 4%;
+    left: 0.2lh;
+    color: #8654CC;
+    font-family: SF Pro Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    background: #FDEEF9;
+    padding: 0.2lh;
+}
+
+.prise {
+    display: flex;
+    gap: 1lh;
+}
+
+#orig {
+    color: #242424;
+    font-family: SF Pro Text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: -0.18px;
+    text-transform: uppercase;
+}
+
+#back {
+    color: #8B8B8B;
+    font-family: SF Pro Text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: -0.56px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+}
+
+#opisanie {
+    color: #999;
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+}
+
+#name {
+    color: black;
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+}
+
+.stars {
+    display: flex;
+}
+
+.dostavka {
+    display: flex;
+    gap: 0.4lh;
+}
+
+.body {
+    padding-top: 1.3lh;
+    display: grid;
+    width: 73%;
+    margin: auto;
+    grid-template-columns: repeat(6, calc(100%/6 - 30px/6*(6 - 1)));
+    column-gap: 30px;
+    grid-auto-flow: row dense;
+}
+
+footer {
+    background-color: #6311b5;
+    padding-top: 2lh;
+}
+
+.footer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokupatel {
+    display: grid;
+}
+
+#buyer {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+#click {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Roboto;
+    font-size: 17.578px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 0.5lh;
+    cursor: pointer;
+}
+
+.safe {
+    display: flex;
+    justify-content: center;
+}
+
+#safe {
+    padding: 2%;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 13.781px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.container2 {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 24px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+
+#slides {
+    width: 100%;
+}
+
+.container2 .item {
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+.dropbtn {
+    background-color: #d532cb;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: green;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d532cb;
+}
+
+#navi {
+    background-color: #d532cb;
+    color: black;
+}
+
+.all-product {
+    display: flex;
+}
+
+.small-photo {
+    display: grid;
+    border-radius: 20px;
+}
+
+.products {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 20px;
+}
+
+#small-photo1 {
+    border-radius: 10px;
+    border: 1px solid gray;
+
+
+}
+
+.small-photo2 {
+    padding-bottom: 0.5lh;
+    overflow: hidden;
+}
+
+.big-photo {
+    position: relative;
+    padding-left: 30px;
+}
+
+.hit {
+    position: absolute;
+    top: 1lh;
+    left: 2.5lh;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#big {
+    border-radius: 20px;
+}
+
+.opisanie1 {
+    padding-left: 2lh;
+    padding-bottom: 0;
+    display: grid;
+}
+
+#logotip {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+
+}
+
+#brand {
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    color: #242424;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    transition: background-color .3s ease 0s;
+    cursor: pointer;
+}
+
+.contetnt {
+    padding-left: 2%;
+    padding-right: 10%;
+    display: grid;
+    align-content: flex-start;
+}
+
+.raiting {
+    padding-top: 5%;
+    display: flex;
+    gap: 2%;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+#zvezda {
+    width: 7%;
+}
+
+#otzv {
+    color: gray;
+    cursor: pointer;
+    border-bottom: 1px dotted gray;
+}
+
+#zifr {
+    padding-right: 30px;
+}
+
+#name-product {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    max-height: 56px;
+    color: #242424;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ozenka {
+    display: flex;
+    padding-top: 10px;
+}
+
+.like {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #f5e8fe;
+    justify-content: space-between;
+    padding: 4px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#good {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #ac43fe;
+    text-transform: uppercase;
+    letter-spacing: -.03em;
+}
+
+
+.cennik {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+#pinkcennik {
+    font-weight: 700;
+    color: #a73afd;
+    margin-right: 8px;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+#blackcennik {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+#graycennik {
+    font-size: 14px;
+    line-height: 20px;
+    color: #868695;
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.WBcard {
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    width: 100%;
+    color: #a73afd;
+}
+
+.BLOCK1 {
+    padding-top: 4%;
+}
+
+#infoblock {
+    font-size: 14px;
+    line-height: 20px;
+    color: #868695;
+    margin-bottom: 8px;
+}
+
+.small-photos{
+    gap: 3%;
+    display: flex;
+
+}
+
+.small-photo2s{
+    border-radius: 50px;
+}
+
+.aside-container{
+    position: relative;
+    padding: 16px 20px 20px;
+    border-radius: 16px;
+    height: 50%;
+    box-shadow: 0 2px 16px rgba(0,0,0,.08);
+    gap: 20px;
+}
+
+.addtrash{
+    background-color: #a73afd;
+    border: 2px solid transparent;
+    border-radius: 15px;
+
+}
+
+#addtrash{
+    font-weight: 600;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 8px 24px 10px;
+}
+.harakter{
+    width: 150%;
+}
+
+.harakter1{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.block__line {
+    flex-grow: 1;
+    flex-basis: 0;
+    height: 1px;
+    border-top: 1px dashed #000;
+    margin: 0 .5rem;
+  }
+
+#harakter1{
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.block__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .block__line {
+    flex-grow: 1;
+    flex-basis: 0;
+    height: 1px;
+    border-top: 1px dashed #000;
+    margin: 0 .5rem;
+  }
+
+
+.block {
+    width: 120%;
+    padding-top: 30%;
+}
+
+#nazvanie {
+
+}
+
+.block__text{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: 5px;
+    border-bottom: 1px dashed #d3d4dd;
+}
+.block__text1{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: 5px;
+}
