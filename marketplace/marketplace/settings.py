@@ -43,6 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainpage',
+    'rest_framework',
+    'users',
+    'products',
+    'orders',
+    'delivery',
+    'reviews',
+    'favorites',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +92,7 @@ DATABASES = {
         'NAME': 'newmarketplace',
         'USER':	'admin',
 	    'PASSWORD': '89562876',
-	    'HOST':	'db',
+	    'HOST':	'localhost',
 	    'PORT':	'5432',
     }
 }

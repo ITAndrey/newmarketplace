@@ -11,7 +11,7 @@ WORKDIR /marketplace
 # Скопируем requirements.txt и установим зависимости
 COPY requirements.txt ./
 RUN pip install --upgrade pip setuptools wheel cython
-RUN apt-get update && apt-get install -y libyaml-dev
+RUN apt-get update
 RUN pip install -r requirements.txt
 
 # Устанавливаем зависимости для сборки

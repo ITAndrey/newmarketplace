@@ -37,4 +37,5 @@ Cython>=0.29.30
 attrs==23.2.0
 Babel==2.10.3
 psycopg2-binary
+djangorestframework
 
